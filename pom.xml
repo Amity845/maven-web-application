@@ -21,7 +21,7 @@
 		<spring.version>5.1.2.RELEASE</spring.version>
 		<junit.version>4.11</junit.version>
 		<log4j.version>1.2.17</log4j.version>
-		<sonar.host.url>http://43.205.135.159:9000/</sonar.host.url>
+		<sonar.host.url>http://172.31.47.114:9000/</sonar.host.url>
 		<sonar.login>squ_03cd1991ec4fa35770ed2cdb88e5f869a58f0618</sonar.login>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -97,13 +97,13 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>Amit Silam Releases Nexus Repository</name>
-	      <url>http://13.234.238.46:8081/repository/citibank-release/</url>
+	      <url>http://172.31.41.161:8081/repository/citibank-release/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Amit Silam Snapshot Nexus Repository </name>
-	      <url>http://13.234.238.46:8081/repository/citibank-snapshot/</url>
+	      <url>http://172.31.41.161:8081/repository/citibank-snapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
