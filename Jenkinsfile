@@ -14,7 +14,7 @@ node{
 	
 	//build
 	stage('Build'){
-	sh "${mavenHome} clean package"
+	sh "${mavenHome}/bin/mvn clean package"
 	}
 	/*
 	//execute sonarQube Report
