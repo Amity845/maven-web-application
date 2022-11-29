@@ -7,7 +7,7 @@ node{
 	echo "The node name is ${env.NODE_NAME}"
 	
 	properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '5', daysToKeepStr: '', numToKeepStr: '5')), [$class: 'JobLocalConfiguration', changeReasonComment: ''], pipelineTriggers([pollSCM('* * * * *')])])
-	
+
 
 	//Checkout Code state
 	stage('CheckoutCode'){
