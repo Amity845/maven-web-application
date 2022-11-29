@@ -8,6 +8,7 @@ node{
 	
 	//Checkout Code state
 	stage('CheckoutCode'){
+		sendSlackNotification("STARTED")
 	git branch: 'development', credentialsId: '3fbb53c3-f01b-4695-ba02-06a46329d14e', 
 	url: 'https://github.com/Amity845/maven-web-application.git'	
 	}
