@@ -33,8 +33,7 @@ node{
 	//copied generated script from pipeline script
 		sshagent(['450ed40d-3fe1-4f54-b544-2db977fe5956']) {
 			//source and dest as tomcatServer user @ private IP
-			sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war 
-			ec2-user@172.31.39.68:/opt/apache-tomcat-9.0.68/webapps"
+			sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war ec2-user@172.31.39.68:/opt/apache-tomcat-9.0.68/webapps"
 		}	
 	}
 	
