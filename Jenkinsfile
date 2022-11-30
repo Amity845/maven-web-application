@@ -17,7 +17,7 @@ node{
 	stage('Build'){
 	sh "${mavenHome}/bin/mvn clean package"
 	}
-	/*
+	
 	//execute sonarQube Report
 	stage('ExecuteSonarQubeReport'){
 	sh "${mavenHome}/bin/mvn sonar:sonar"
@@ -37,7 +37,7 @@ node{
 			ec2-user@172.31.39.68:/opt/apache-tomcat-9.0.68/webapps"
 		}	
 	}
-	*/
+	
 	}//try clossing
 	catch (e) {
     	// If there was an exception thrown, the build failed
